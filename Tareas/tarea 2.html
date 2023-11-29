@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desglose de protocolos de red según los niveles del modelo OSI</title>
+    <link rel="osi" href="">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f5dc; 
+            margin: 0;
+            padding: 20px;
+            color: #800000;
+        }
+
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0000ff; 
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #008000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .seccion {
+            margin-bottom: 40px;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            margin-right: 10px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desglose de protocolos de red según los niveles del modelo OSI</h1>
+    
+    <nav>
+        <ul>
+            <li><a href="#nivel1">Nivel 1</a></li>
+            <li><a href="#nivel2">Nivel 2</a></li>
+            <li><a href="#nivel3">Nivel 3</a></li>
+            <li><a href="#nivel4">Nivel 4</a></li>
+            <li><a href="#nivel5">Nivel 5</a></li>
+            <li><a href="#nivel6">Nivel 6</a></li>
+            <li><a href="#nivel7">Nivel 7</a></li>
+        </ul>
+    </nav>
+    
+    <div class="seccion" id="nivel1">
+        <h2>Nivel 1: Capa Física</h2>
+        <p>Resumen: La capa física, siendo la más básica del modelo OSI, se encarga de la transmisión de bits individuales de un nodo a otro.</p>
+        <p>Protocolos: Algunos protocolos que se utilizan en la capa física son Ethernet (IEEE 802.3), Wi-Fi (IEEE 802.11), Bluetooth (IEEE 802.15), entre otros.</p>
+    </div>
+    
+    <div class="seccion" id="nivel2">
+        <h2>Nivel  2: Capa de Enlace de Datos</h2>
+        <p>Resumen: La capa de enlace de datos se ocupa de la entrega de datos de nodo a nodo. Su principal función es garantizar que la transferencia de datos sea libre de errores de un nodo a otro, sobre la capa física.</p>
+        <p>Protocolos: Algunos ejemplos de protocolos de la capa de enlace de datos incluyen Ethernet (IEEE 802.3), Token Ring, Frame Relay, entre otros.</p>
+    </div>
+    
+    <div class="seccion" id="nivel3">
+        <h2>Capa 3: Capa de Red</h2>
+        <p>Resumen: La capa de red proporciona los medios funcionales y de procedimiento para transferir secuencias de datos de longitud variable de un host fuente a un host de destino a través de una o más redes, manteniendo las funciones de calidad de servicio.</p>
+        <p>Protocolos: Algunos ejemplos de protocolos de la capa de red incluyen IP (Internet Protocol), ICMP (Internet Control Message Protocol), IGMP (Internet Group Management Protocol), IPsec (Internet Protocol Security), entre otros.</p>
+    </div>
+    
+    <div class="seccion" id="nivel4">
+        <h2>Capa 4: Capa de Transporte</h2>
+        <p>Resumen: La capa de transporte asegura la entrega completa y confiable de paquetes de datos. Proporciona mecanismos como el control de errores, el control de flujo y el control de congestión para realizar un seguimiento de los paquetes de datos, verificar errores y duplicaciones, y reenviar la información que falla en la entrega.</p>
+        <p>Protocolos: Algunos ejemplos de protocolos de la capa de transporte incluyen TCP (Transmission Control Protocol), UDP (User Datagram Protocol), DCCP (Datagram Congestion Control Protocol), entre otros.</p>
+    </div>
+    
+    <div class="seccion" id="nivel5">
+        <h2>Capa 5: Capa de Sesión</h2>
+        <p>Resumen: La capa de sesión controla las conversaciones entre diferentes computadoras. Una sesión o conexión entre máquinas se establece, se gestiona y se termina en la capa 5.</p>
+        <p>Protocolos: Algunos ejemplos de protocolos de la capa de sesión incluyen NFS, SQL, RPC, etc.</p>
+    </div>
+
+    <div class="seccion" id="nivel6">
+        <h2>Capa 6: Capa de Presentación</h2>
+        <p>Resumen: La capa de presentación se encarga de la representación de la información. Asegura que la información que envía la capa de aplicación de un sistema puede ser leída por la capa de aplicación de otro sistema.</p>
+        <p>Protocolos: Algunos ejemplos de protocolos de la capa de presentación incluyen TLS, SSL, etc.</p>
+    </div>
+
+    <div class="seccion" id="nivel7">
+        <h2>Capa 7: Capa de Aplicación</h2>
+        <p>Resumen: La capa de aplicación es la capa del modelo OSI más cercana al usuario final. Esta capa interactúa directamente con el software de aplicación para realizar las funciones de red.</p>
+        <p>Protocolos: Algunos ejemplos de protocolos de la capa de aplicación incluyen HTTP, FTP, SMTP, DNS, etc.</p>
+    </div>
+</body>
+</html>
